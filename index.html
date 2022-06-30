@@ -2,48 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/script.js" defer></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    <div class="box">
 
-  How did we do?
+      <div id="box__star">
+        <img src="./images/icon-star.svg" alt="icon-star">
+      </div>
+      
+      <h1>How did we do?</h1>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
 
-  1 2 3 4 5
+      <div id="box__numbers">    
+        <input class="r-input" id="radio1" type="radio" name="radio" data-rating>
+        <label class="radio" for="radio1">1</label>
+        
+        <input class="r-input" id="radio2" type="radio" name="radio" data-rating>
+        <label class="radio" for="radio2">2</label>
 
-  Submit
+        <input class="r-input" id="radio3" type="radio" name="radio" data-rating>
+        <label class="radio" for="radio3">3</label>
 
-  <!-- Rating state end -->
+        <input class="r-input" id="radio4" type="radio" name="radio" data-rating>
+        <label class="radio" for="radio4">4</label>
 
-  <!-- Thank you state start -->
+        <input class="r-input" id="radio5" type="radio" name="radio" data-rating>
+        <label class="radio" for="radio5">5</label>
+      </div>
 
-  You selected <!-- Add rating here --> out of 5
+      <input id="box__submit" type="submit" value="S U B M I T" data-submit>
 
-  Thank you!
+      <div id="alert" tabindex="-1" data-alert>Rating not selected!</div> 
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+    </div>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Gabriel Dueñas</a>.
+  </footer>
+
 </body>
 </html>
